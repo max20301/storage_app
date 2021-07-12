@@ -1,0 +1,28 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type StorageEntity {
+  id: String!
+  location: String!
+  object: String!
+}
+
+type Query {
+  getStorageList: [StorageEntity!]!
+}
+
+type Mutation {
+  createStorage(data: CreateStorageInput!): StorageEntity!
+  deleteStorage(data: DeleteStorageInput!): StorageEntity!
+}
+
+input CreateStorageInput {
+  location: String!
+  object: String!
+}
+
+input DeleteStorageInput {
+  location: String!
+  object: String!
+}
